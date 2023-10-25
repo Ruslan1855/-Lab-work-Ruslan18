@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main() 
+{
+    int n, k;
+    std::cin >> n >> k;
+    
+    int apples_per_student = k / n;
+    std::cout << apples_per_student << std::endl;
+    
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main() {
+    int correctAnswer, studentAnswer;
+    std::cin >> correctAnswer >> studentAnswer;
+
+    if (correctAnswer == 1 && studentAnswer != 1) {
+        std::cout << "NO";
+    } else if (correctAnswer != 1 && studentAnswer == 1) {
+        std::cout << "NO";
+    } else {
+        std::cout << "YES";
+    }
+
+    return 0;
+}

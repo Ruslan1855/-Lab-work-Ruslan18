@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    int knightRow, knightCol, figureRow, figureCol;
+    std::cin >> knightRow >> knightCol >> figureRow >> figureCol;
+
+    int rowDiff = std::abs(knightRow - figureRow);
+    int colDiff = std::abs(knightCol - figureCol);
+    if ((rowDiff == 1 && colDiff == 2) || (rowDiff == 2 && colDiff == 1)) {
+        std::cout << "YES" << std::endl;
+    } else {
+        std::cout << "NO" << std::endl;
+    }
+
+    return 0;
+}
